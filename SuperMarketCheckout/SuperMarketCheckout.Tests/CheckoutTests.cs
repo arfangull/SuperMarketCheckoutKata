@@ -1,23 +1,32 @@
+using SupermarketCheckout.Services.Interfaces;
 using System;
 using System.Collections.Generic;
+using SupermarketCheckout.Core.Domain;
+using SupermarketCheckout.Services;
 using Xunit;
 
 namespace SuperMarketCheckout.Tests
 {
     public class CheckoutTests
     {
+        private readonly ICheckout _checkout;
+
+        public CheckoutTests()
+        {
+            _checkout = new Checkout();
+        }
+
         [Fact]
         public void Scan_No_Item_CalculateTotalPrice_Should_Return_Zero()
         {
             // Arrange
-            var product = new Product();
-            var checkout = new Checkout();
+            var product = new Product { Sku = "", UnitPrice = 0 };
 
             // Act
-            var total = checkout.CalculateTotalPrice();
+            // We are not going to scan anything
+            var total = _checkout.CalculateTotalPrice();
 
             // Assert
-
             Assert.Equal(expected: 0, total);
 
         }
@@ -25,79 +34,64 @@ namespace SuperMarketCheckout.Tests
         public void Scan_SingleProduct_CalculateTotalPrice_Should_Return_Product_TotalPrice()
         {
             // Arrange
-            var product = new Product();
-            var checkout = new Checkout();
-
+            var product = new Product { Sku = "A99", UnitPrice = 0.50m };
             // Act
-            checkout.Scan(product);
-            var total = checkout.CalculateTotalPrice();
+            _checkout.Scan(product);
+            var total = _checkout.CalculateTotalPrice();
 
             // Assert
-
-            Assert.Equal(expected: 0.50, total);
+            Assert.Equal(expected: 0.50m, total);
         }
         [Fact]
         public void Scan_MultipleProducts_CalculateTotalPrice_Should_Return_Products_TotalPrice()
         {
             // Arrange
-            var product1 = new Product(); // A99
-            var product2 = new Product(); // B15
-            var checkout = new Checkout();
+            var A99 = new Product { Sku = "A99", UnitPrice = 0.50m };
+            var B15 = new Product { Sku = "B15", UnitPrice = 0.30m };
 
             // Act
-            checkout.Scan(product1);
-            checkout.Scan(product2);
-            var total = checkout.CalculateTotalPrice();
+            _checkout.Scan(A99);
+            _checkout.Scan(B15);
+            var total = _checkout.CalculateTotalPrice();
 
             // Assert
-
-            Assert.Equal(expected: 0.80, total);
+            Assert.Equal(expected: 0.80m, total);
         }
         [Fact]
-        public void Scan_MultipleProducts_With_SpecialOffers_CalculateTotalPrice_Should_Return_Discounted_TotalPrice()
+        public void Scan_AllProducts_CalculateTotalPrice_Should_Return_Products_TotalPrice()
         {
             // Arrange
-            var product = new Product(); // B15
-            var checkout = new Checkout();
-            var promotionalDiscount = new PromotionalDicsount();
+            var A99 = new Product { Sku = "A99", UnitPrice = 0.50m };
+            var B15 = new Product { Sku = "B15", UnitPrice = 0.30m };
+            var C40 = new Product { Sku = "C40", UnitPrice = 0.60m };
+
             // Act
-            checkout.Scan(product);
-            checkout.Scan(product);
-            var total = checkout.CalculateTotalPrice();
+            _checkout.Scan(A99);
+            _checkout.Scan(B15);
+            _checkout.Scan(C40);
+
+            var total = _checkout.CalculateTotalPrice();
 
             // Assert
-
-            Assert.Equal(expected: 0.45, total);
+            Assert.Equal(expected: 1.40m, total);
         }
-    }
-
-    public class PromotionalDicsount
-    {
-    }
-
-    public class Checkout
-    {
-        private IList<Product> _products;
-
-        public Checkout()
+        [Fact]
+        public void Scan_MultipleProducts_With_SpecialOffers_CalculateTotalPrice_Should_Return_TotalPrice()
         {
-            _products = new List<Product>();
-        }
+            // Arrange
+            var A99 = new Product { Sku = "A99", UnitPrice = 0.50m };
+            var B15 = new Product { Sku = "B15", UnitPrice = 0.30m };
 
-        public double CalculateTotalPrice()
-        {
-            // This could anything as its a Red state and will be implemented/refactored. 
+            // Act
+            _checkout.Scan(A99);
+            _checkout.Scan(B15);
+            _checkout.Scan(B15);
 
-            throw new NotImplementedException();
-        }
+            var total = _checkout.CalculateTotalPrice();
 
-        public void Scan(Product product)
-        {
-            _products.Add(product);
+            // Assert
+            Assert.Equal(expected: 1.10m, total);
         }
     }
 
-    public class Product
-    {
-    }
 }

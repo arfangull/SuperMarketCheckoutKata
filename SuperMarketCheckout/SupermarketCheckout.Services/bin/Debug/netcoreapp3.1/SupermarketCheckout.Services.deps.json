@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "SupermarketCheckout.Services/1.0.0": {
+        "dependencies": {
+          "SupermarketCheckout.Core": "1.0.0"
+        },
+        "runtime": {
+          "SupermarketCheckout.Services.dll": {}
+        }
+      },
+      "SupermarketCheckout.Core/1.0.0": {
+        "runtime": {
+          "SupermarketCheckout.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SupermarketCheckout.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SupermarketCheckout.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

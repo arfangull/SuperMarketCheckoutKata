@@ -1,0 +1,8 @@
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Core\bin\Debug\netcoreapp3.1\SupermarketCheckout.Core.deps.json
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Core\bin\Debug\netcoreapp3.1\SupermarketCheckout.Core.dll
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Core\bin\Debug\netcoreapp3.1\SupermarketCheckout.Core.pdb
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Core\obj\Debug\netcoreapp3.1\SupermarketCheckout.Core.csprojAssemblyReference.cache
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Core\obj\Debug\netcoreapp3.1\SupermarketCheckout.Core.AssemblyInfoInputs.cache
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Core\obj\Debug\netcoreapp3.1\SupermarketCheckout.Core.AssemblyInfo.cs
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Core\obj\Debug\netcoreapp3.1\SupermarketCheckout.Core.dll
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Core\obj\Debug\netcoreapp3.1\SupermarketCheckout.Core.pdb

@@ -1,0 +1,11 @@
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Services\bin\Debug\netcoreapp3.1\SupermarketCheckout.Services.deps.json
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Services\bin\Debug\netcoreapp3.1\SupermarketCheckout.Services.dll
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Services\bin\Debug\netcoreapp3.1\SupermarketCheckout.Services.pdb
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Services\bin\Debug\netcoreapp3.1\SupermarketCheckout.Core.dll
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Services\bin\Debug\netcoreapp3.1\SupermarketCheckout.Core.pdb
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Services\obj\Debug\netcoreapp3.1\SupermarketCheckout.Services.csprojAssemblyReference.cache
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Services\obj\Debug\netcoreapp3.1\SupermarketCheckout.Services.AssemblyInfoInputs.cache
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Services\obj\Debug\netcoreapp3.1\SupermarketCheckout.Services.AssemblyInfo.cs
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Services\obj\Debug\netcoreapp3.1\SupermarketCheckout.Services.csproj.CopyComplete
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Services\obj\Debug\netcoreapp3.1\SupermarketCheckout.Services.dll
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SupermarketCheckout.Services\obj\Debug\netcoreapp3.1\SupermarketCheckout.Services.pdb

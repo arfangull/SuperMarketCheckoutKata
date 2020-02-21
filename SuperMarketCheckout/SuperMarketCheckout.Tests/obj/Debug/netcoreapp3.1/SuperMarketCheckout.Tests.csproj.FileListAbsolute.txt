@@ -91,3 +91,8 @@ C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SuperMarketCheckout.Test
 C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SuperMarketCheckout.Tests\obj\Debug\netcoreapp3.1\SuperMarketCheckout.Tests.csproj.CopyComplete
 C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SuperMarketCheckout.Tests\obj\Debug\netcoreapp3.1\SuperMarketCheckout.Tests.dll
 C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SuperMarketCheckout.Tests\obj\Debug\netcoreapp3.1\SuperMarketCheckout.Tests.pdb
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SuperMarketCheckout.Tests\obj\Debug\netcoreapp3.1\SuperMarketCheckout.Tests.csprojAssemblyReference.cache
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SuperMarketCheckout.Tests\bin\Debug\netcoreapp3.1\SupermarketCheckout.Core.dll
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SuperMarketCheckout.Tests\bin\Debug\netcoreapp3.1\SupermarketCheckout.Services.dll
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SuperMarketCheckout.Tests\bin\Debug\netcoreapp3.1\SupermarketCheckout.Services.pdb
+C:\Personal\SuperMarketCheckoutKata\SuperMarketCheckout\SuperMarketCheckout.Tests\bin\Debug\netcoreapp3.1\SupermarketCheckout.Core.pdb
