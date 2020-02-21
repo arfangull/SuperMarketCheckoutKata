@@ -4,10 +4,10 @@ using System.Text;
 
 namespace SupermarketCheckout.Core.Domain
 {
-    public class Product
+    public class Promotion
     {
         public string Sku { get; set; }
-        public decimal UnitPrice { get; set; }
-        public Promotion Promotion { get; set; }
+        public int Quantity { get; set; }
+        public decimal OfferPrice { get; set; }
     }
 }
